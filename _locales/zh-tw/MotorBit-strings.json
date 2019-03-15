@@ -1,0 +1,12 @@
+{
+
+  "MotorBit.Music|block": "音樂播放|%index",
+  "MotorBit.Servo|block": "舵機|編號 %num|角度 %value",
+  "MotorBit.MotorRun|block": " 直流電機|%index|速度(-255~255) %speed",
+  "MotorBit.MotorRunDual|block": " 直流電機|%motor1|速度(-255~255) %speed1|%motor2|速度(-255~255) %speed2",
+  "MotorBit.MotorStopAll|block": "停止所有電機",
+  "MotorBit.StepperDegree|block": "步進電機(28BYJ-48) |%index|角度 %degree",
+  "MotorBit.StepperTurn|block": "步進電機(28BYJ-48) |%index|轉 %turn|圈數",
+  "MotorBit.StepperDual|block": "雙步進電機(角度) |B1 %degree1| B2 %degree2"
+  
+}
