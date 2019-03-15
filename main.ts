@@ -205,7 +205,6 @@ namespace SuperBit {
     //% blockId=SuperBit_RGB_Program block="RGB_Program"
     //% weight=99
     //% blockGap=10
-    //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Program(): neopixel.Strip {
          
@@ -218,7 +217,6 @@ namespace SuperBit {
     //% blockId=SuperBit_Music block="Music|%index"
     //% weight=95
     //% blockGap=10
-    //% color="#F8431D"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music(index: enMusic): void {
         switch (index) {
