@@ -2,11 +2,11 @@
 Copyright (C): 2010-2019, Shenzhen Yahboom Tech
 modified from liusen
 load dependency
-"HelloBot": "file:../pxt-motorbit"
+"HelloBot": "file:../pxt-Superbit"
 */
 
 //% color="#ECA40D" weight=20 icon="\uf085"
-namespace MotorBit {
+namespace SuperBit {
 
     const PCA9685_ADD = 0x40
     const MODE1 = 0x00
@@ -204,7 +204,7 @@ namespace MotorBit {
      */   
 
     
-    //% blockId=MotorBit_Music block="Music|%index"
+    //% blockId=SuperBit_Music block="Music|%index"
     //% weight=95
     //% blockGap=10
     //% color="#F8431D"
@@ -234,7 +234,7 @@ namespace MotorBit {
         }
     }
     
-    //% blockId=motorbit_Servo block="Servo|num %num|value %value"
+    //% blockId=Superbit_Servo block="Servo|num %num|value %value"
     //% weight=94
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=180
@@ -247,7 +247,7 @@ namespace MotorBit {
         setPwm(num, 0, pwm);
 
     }
-    //% blockId=motorbit_MotorRun block="Motor|%index|speed(-255~255) %speed"
+    //% blockId=Superbit_MotorRun block="Motor|%index|speed(-255~255) %speed"
     //% weight=93
     //% speed.min=-255 speed.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -290,7 +290,7 @@ namespace MotorBit {
     
 
 
-    //% blockId=motorbit_MotorRunDual block="Motor|%motor1|speed %speed1|%motor2|speed %speed2"
+    //% blockId=Superbit_MotorRunDual block="Motor|%motor1|speed %speed1|%motor2|speed %speed2"
     //% weight=92
     //% blockGap=50
     //% speed1.min=-255 speed1.max=255
@@ -301,7 +301,7 @@ namespace MotorBit {
         MotorRun(motor2, speed2);
     }
 
-    //% blockId=motorbit_StepperDegree block="Stepper Motor(28BYJ-48) |%index|degree %degree"
+    //% blockId=Superbit_StepperDegree block="Stepper Motor(28BYJ-48) |%index|degree %degree"
     //% weight=90
     export function StepperDegree(index: enSteppers, degree: number): void {
         if (!initialized) {
@@ -313,7 +313,7 @@ namespace MotorBit {
         MotorStopAll()
     }
 
-    //% blockId=motorbit_MotorStopAll block="Motor Stop All"
+    //% blockId=Superbit_MotorStopAll block="Motor Stop All"
     //% weight=91
     //% blockGap=50
     export function MotorStopAll(): void {
@@ -328,14 +328,14 @@ namespace MotorBit {
         
     }
 
-    //% blockId=motorbit_StepperTurn block="Stepper Motor(28BYJ-48) |%index|turn %turn|circle"
+    //% blockId=Superbit_StepperTurn block="Stepper Motor(28BYJ-48) |%index|turn %turn|circle"
     //% weight=89
     export function StepperTurn(index: enSteppers, turn: enTurns): void {
         let degree = turn;
         StepperDegree(index, degree);
     }
 
-    //% blockId=motorbit_StepperDual block="Dual Stepper Motor(Degree) |M1 %degree1| M2 %degree2"
+    //% blockId=Superbit_StepperDual block="Dual Stepper Motor(Degree) |M1 %degree1| M2 %degree2"
     //% weight=88
     export function StepperDual(degree1: number, degree2: number): void {
         if (!initialized) {

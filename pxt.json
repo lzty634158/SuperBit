@@ -1,7 +1,7 @@
 {
-    "name": "MotorBit",
+    "name": "SuperBit",
     "version": "1.0.0",
-    "description": "Extension for YahBoom MotorBit V1.0",
+    "description": "Extension for YahBoom SuperBit V1.0",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh-cn/MotorBit-strings.json",
-        "_locales/zh-tw/MotorBit-strings.json"
+        "_locales/zh-cn/SuperBit-strings.json",
+        "_locales/zh-tw/SuperBit-strings.json"
 
     ],
     "testFiles": [

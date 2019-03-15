@@ -1,6 +1,6 @@
 # HelloBot
 
-Extension for Yahboom MotorBit
+Extension for Yahboom SuperBit
 
 ## License
 
