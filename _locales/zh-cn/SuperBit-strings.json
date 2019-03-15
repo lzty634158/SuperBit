@@ -1,6 +1,6 @@
 {
 
-
+  "SuperBit.RGB_Program": "RGB编程灯",
   "SuperBit.Music|block": "音乐播放|%index",
   "SuperBit.Servo|block": "舵机|编号 %num|角度 %value",
   "SuperBit.MotorRun|block": " 直流电机|%index|速度(-255~255) %speed",

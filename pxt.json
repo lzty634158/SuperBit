@@ -4,7 +4,9 @@
     "description": "Extension for YahBoom SuperBit V1.0",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "neopixel": "github:kittenbot/pxt-neopixel#v0.6.12"
+
     },
     "files": [
         "README.md",
