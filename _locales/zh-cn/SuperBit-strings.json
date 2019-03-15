@@ -1,0 +1,15 @@
+{
+
+
+  "SuperBit.Music|block": "音乐播放|%index",
+  "SuperBit.Servo|block": "舵机|编号 %num|角度 %value",
+  "SuperBit.MotorRun|block": " 直流电机|%index|速度(-255~255) %speed",
+  "SuperBit.MotorRunDual|block": " 直流电机|%motor1|速度(-255~255) %speed1|%motor2|速度(-255~255) %speed2",
+  "SuperBit.MotorStopAll|block": "停止所有电机",
+  "SuperBit.StepperDegree|block": "步进电机(28BYJ-48) |%index|角度 %degree",
+  "SuperBit.StepperTurn|block": "步进电机(28BYJ-48) |%index|转 %turn|圈数",
+  "SuperBit.StepperDual|block": "双步进电机(角度) |B1 %degree1| B2 %degree2"
+  
+
+ 
+}
