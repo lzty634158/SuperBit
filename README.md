@@ -1,4 +1,4 @@
-# HelloBot
+# Super：Bit
 
 Extension for Yahboom SuperBit
 
