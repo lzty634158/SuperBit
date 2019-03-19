@@ -1,5 +1,5 @@
 {
-  "SuperBit.RGB_Program": "RGB編程燈",
+  "SuperBit.RGB_Program|block": "RGB編程燈",
   "SuperBit.Music|block": "音樂播放|%index",
   "SuperBit.Servo|block": "舵機(180)|編號 %num|角度 %value",
   "SuperBit.Servo2|block": "舵機(270)|編號 %num|角度 %value",
