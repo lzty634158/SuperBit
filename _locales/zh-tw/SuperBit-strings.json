@@ -10,8 +10,8 @@
   "SuperBit.StepperDegree|block": "步進電機(28BYJ-48) |%index|角度 %degree",
   "SuperBit.StepperTurn|block": "步進電機(28BYJ-48) |%index|轉 %turn|圈數",
   "SuperBit.StepperDual|block": "雙步進電機(角度) |B1 %degree1| B2 %degree2",
-  "SuperBit.forward|block": "正轉",
-  "SuperBit.reverse|block": "反轉",
-  "SuperBit.stop|block": "停止"
+  "SuperBit.enPos.forward|block": "正轉",
+  "SuperBit.enPos.reverse|block": "反轉",
+  "SuperBit.enPos.stop|block": "停止"
   
 }

@@ -76,11 +76,11 @@ namespace SuperBit {
     }
     export enum enPos { 
         //% blockId="forward" block="forward"
-        FORWARD = 1,
+        forward = 1,
         //% blockId="reverse" block="reverse"
-        REVERSE = 2,
+        reverse = 2,
         //% blockId="stop" block="stop"
-        STOP = 3
+        stop = 3
     }
 
     export enum enTurns {
