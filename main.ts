@@ -74,6 +74,14 @@ namespace SuperBit {
         B1 = 0x1,
         B2 = 0x2
     }
+    export enum enPos { 
+        //% blockId="forward" block="forward"
+        FORWARD = 1,
+        //% blockId="reverse" block="reverse"
+        REVERSE = 2,
+        //% blockId="stop" block="stop"
+        STOP = 3
+    }
 
     export enum enTurns {
         //% blockId="T1B4" block="1/4"
@@ -215,7 +223,7 @@ namespace SuperBit {
     } 
     
     //% blockId=SuperBit_Music block="Music|%index"
-    //% weight=95
+    //% weight=98
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music(index: enMusic): void {
@@ -243,8 +251,8 @@ namespace SuperBit {
         }
     }
     
-    //% blockId=SuperBit_Servo block="Servo|num %num|value %value"
-    //% weight=94
+    //% blockId=SuperBit_Servo block="Servo(180°)|num %num|value %value"
+    //% weight=97
     //% blockGap=10
     //% num.min=1 num.max=4 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=20
@@ -254,6 +262,50 @@ namespace SuperBit {
         let us = (value * 1800 / 180 + 600); // 0.6 ~ 2.4
         let pwm = us * 4096 / 20000;
         setPwm(num, 0, pwm);
+
+    }
+
+    //% blockId=SuperBit_Servo2 block="Servo(270°)|num %num|value %value"
+    //% weight=96
+    //% blockGap=10
+    //% num.min=1 num.max=4 value.min=0 value.max=270
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=20
+    export function Servo2(num: enServo, value: number): void {
+
+        // 50hz: 20,000 us
+        let newvalue = Math.map(value, 0, 270, 0, 180);
+        let us = (newvalue * 1800 / 180 + 600); // 0.6 ~ 2.4
+        let pwm = us * 4096 / 20000;
+        setPwm(num, 0, pwm);
+
+    }
+
+    //% blockId=SuperBit_Servo3 block="Servo(360°)|num %num|pos %pos|value %value"
+    //% weight=96
+    //% blockGap=10
+    //% num.min=1 num.max=4 value.min=0 value.max=90
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=20
+    export function Servo3(num: enServo, pos: enPos, value: number): void {
+
+        // 50hz: 20,000 us
+        
+        if (pos == enPos.STOP) {
+            let us = (86 * 1800 / 180 + 600); // 0.6 ~ 2.4
+            let pwm = us * 4096 / 20000;
+            setPwm(num, 0, pwm);
+        }
+        else if(pos == enPos.FORWARD){ //0-90 -> 90 - 0
+            let us = ((90-value) * 1800 / 180 + 600); // 0.6 ~ 2.4
+            let pwm = us * 4096 / 20000;
+            setPwm(num, 0, pwm);
+        }
+        else if(pos == enPos.REVERSE){ //0-90 -> 90 -180
+            let us = ((90+value) * 1800 / 180 + 600); // 0.6 ~ 2.4
+            let pwm = us * 4096 / 20000;
+            setPwm(num, 0, pwm);
+        }
+
+       
 
     }
     //% blockId=SuperBit_MotorRun block="Motor|%index|speed(-255~255) %speed"
