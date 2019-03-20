@@ -13,7 +13,9 @@
   "SuperBit.StepperDual|block": "双步进电机(角度) |B1 %degree1| B2 %degree2",
   "SuperBit.enPos.forward|block": "正转",
   "SuperBit.enPos.reverse|block": "反转",
-  "SuperBit.enPos.stop|block": "停止"
+  "SuperBit.enPos.stop|block": "停止",
+  "SuperBit.PWMOFF|block":  "关闭PWM输出|%index"
+  
 
   
 

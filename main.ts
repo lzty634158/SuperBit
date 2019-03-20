@@ -420,4 +420,10 @@ namespace SuperBit {
         MotorStopAll()
     }
 
+    //% blockId=SuperBit_PWMOFF block="PWM OFF|%index"
+    //% weight=87
+    export function PWMOFF(index: number): void {
+        setPwm(index, 0, 0);
+    }
+
 }
