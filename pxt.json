@@ -1,11 +1,11 @@
 {
     "name": "SuperBit",
-    "version": "1.0.0",
-    "description": "Extension for YahBoom SuperBit V1.0",
+    "version": "2.0.0",
+    "description": "Extension for YahBoom SuperBit V2.0",
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:kittenbot/pxt-neopixel#v0.6.12"
+        "neopixel": "github:lzty634158/pxt-neopixel"
     },
     "files": [
         "README.md",
